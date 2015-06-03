@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <title>Isaac 2048</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+<style type="text/css"></style></head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <center><h1 class="title">Isaac 2048</h1></center>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>BRIM
+	  !</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container"><div class="tile tile-2 tile-position-4-1"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-4-2 tile-new"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-4-3"><div class="tile-inner">2</div></div></div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    2048 was created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli</a> which is based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+    </p>
+	<hr>
+	<p>
+	<strong>NOTE:</strong> This is the Isaac: Rebirth version of the game 2048. Modified by <a href="http://twitch.tv/jort93" target="_blank">jort93</a>. 
+	</p>
+	<hr><table class="table">
+		<thead>
+			<tr><td>
+				Points
+			</td>
+			<td>
+				Item
+			</td>
+		</tr></thead>
+		<tbody>
+			<tr>
+				<td>2</td>
+				<td><img src="img/level1.png"></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><img src="img/level2.png"></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td><img src="img/level3.png"></td>
+			</tr>
+			<tr>
+				<td>16</td>
+				<td><img src="img/level4.png"></td>
+			</tr>
+			<tr>
+				<td>32</td>
+				<td><img src="img/level5.png"></td>
+			</tr>
+			<tr>
+				<td>64</td>
+				<td><img src="img/level6.png"></td>
+			</tr>
+			<tr>
+				<td>128</td>
+				<td><img src="img/level7.png"></td>
+			</tr>
+			<tr>
+				<td>256</td>
+				<td><img src="img/level8.png"></td>
+			</tr>
+			<tr>
+				<td>512</td>
+				<td><img src="img/level9.png"></td>
+			</tr>
+			<tr>
+				<td>1024</td>
+				<td><img src="img/level10.png"></td>
+			</tr>
+			<tr>
+				<td>2048</td>
+				<td><img src="img/level11.png"></td>
+			</tr>
+			  </tbody>
+		  </table>
+	  </div>
+  
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+
+
+</body></html>
